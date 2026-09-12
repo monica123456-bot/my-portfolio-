@@ -1,0 +1,32 @@
+body{
+    width: 600px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px solid black;
+}
+img{
+    
+}
+.about me{
+    background-color: lightblue;
+}
+.contact{
+    background-color: darkblue;
+}
+.skills{
+    background-color: greenyellow;
+}
+main section{
+    display: flex;
+    width:33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;    
+    margin: 10px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
