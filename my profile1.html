@@ -1,89 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content"Personal profile and Mini portfolio.>
+
+    <meta name="description" content="Personal profile and mini-portfolio of Monica Ajak Kaman.">
+
     <title>Monica Ajak Kaman | Portfolio</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
-    <header>
+
+    
+    <header class="bg-blue-700 text-white px-4 py-4 md:px-8">
         <h1>Monica Ajak Kaman</h1>
-        <p>Computer Information Systems Student| Web Developer & Designer</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact </a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>I am a passionate Computer Information Systems student with a strong interest in web development and technology. I enjoy learning how technology can be used to solve problems and make everyday life easier.</p>
+        <p>Computer Information Systems Student | Web Developer &amp; Designer</p>
 
-        <p>I am currently developing my skills in programming, web development, and information systems. My goal is to continue learning and use technology to create useful solutions.</p>
-    </section>
-    <section>
-        <h2>Skills</h2>
-
-        <article>
-            <h3>Technical Skills</h3>
+      
+        <nav class="py-3" aria-label="Main navigation">
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </article>
-        <section>
-            <h2>Contact Me</h2>
+        </nav>
+    </header>
+
+   
+    <main>
+
+       
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.png" alt="Profile picture of Monica Ajak Kaman" width="150" height="150">
+
             <p>
-                If you would like to get in touch with me, please fill out the form below.
+                I am a passionate Computer Information Systems student with
+                a strong interest in web development and technology. I enjoy
+                learning how technology can be used to solve problems and
+                make everyday life easier.
             </p>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your full name">
-                </div>
 
-                <br>
-            
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required  minlength="5" placeholder="Enter your email address">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="eg. 1234567890">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="8" cols="50" required minlength="10" placeholder="Enter your message here."></textarea>
-                </div>
-
-                <br>
-
-                <button type="submit">Send Message</button>
-            </form>
+            <p>
+                I am currently developing my skills in programming, web
+                development, and information systems. My goal is to continue
+                learning and use technology to create useful solutions.
+            </p>
         </section>
 
         
-        </main>
+        <section id="skills">
+            <h2>Skills</h2>
 
-        <footer>
-            <p>&copy; 2026 Monica Ajak Kaman. All rightsreserved.</p>
+            <article>
+                <h3>Technical Skills</h3>
+
+                <ul class="portfolio-grid">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+        </section>
+
+       
+        <section id="contact" class="px-4 py-8 md:px-8">
+            <h2>Contact Me</h2>
 
             <p>
-                Email:
-                <a href="mailto:monica.kaman@gmail.com">monica.kaman@gmail.com</a>
+                If you would like to get in touch with me, please fill out
+                the form below.
             </p>
-        </footer>
-    
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="2"
+                        placeholder="Enter your full name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        minlength="5"
+                        placeholder="Enter your email address"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        pattern="[0-9]{10}"
+                        placeholder="e.g. 1234567890"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="8"
+                        required
+                        minlength="10"
+                        placeholder="Enter your message here."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2026 Monica Ajak Kaman. All rights reserved.</p>
+
+        <p>
+            Email:
+            <a href="mailto:monica.kaman@gmail.com">
+                monica.kaman@gmail.com
+            </a>
+        </p>
+    </footer>
+
 </body>
 </html>
